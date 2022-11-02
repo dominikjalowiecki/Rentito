@@ -1,0 +1,130 @@
+.login-body {
+    background-color: #f5f5f5;
+}
+
+.car-image {
+    height: 300px;
+}
+
+.car-image-offers {
+    height: 250px;
+}
+
+.jumbotron {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/jumbotron-background.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.offer-image {
+    max-height: 450px;
+}
+
+body.dark-mode {
+    background-color: rgb(45, 45, 45);
+}
+
+body.dark-mode .border-right,
+body.dark-mode .border-left,
+body.dark-mode .border-top,
+body.dark-mode .border-bottom,
+body.dark-mode .border {
+    border-color: rgb(100, 100, 100) !important;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode small,
+body.dark-mode label,
+body.dark-mode span,
+body.dark-mode .jumbotron p,
+body.dark-mode input#images,
+body.dark-mode navbar a {
+    color: #fff !important;
+}
+
+body.dark-mode .navbar-toggler {
+    background-color: #fff5;
+}
+
+body.dark-mode .navbar-light .navbar-toggler {
+    color: #fff5;
+    border-color: #fff5;
+}
+
+body.dark-mode p
+{
+    color: rgb(200, 200, 200) !important;
+}
+
+body.dark-mode .pagination .page-item a {
+    background-color: #343a40 !important;
+}
+
+body.dark-mode .pagination .page-item.disabled a {
+    opacity: 0.75;
+}
+
+
+.jumbotron hr {
+    border-color: #fffa;
+    margin: 30px 0;
+    max-width: 300px;
+}
+
+.jumbotron a {
+    text-decoration: underline;
+}
+
+.custom-control-label {
+    margin-left: 40px;
+}
+
+.form-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.form-container {
+    width: 380px;
+}
+
+.footer .row a {
+    text-decoration: underline;
+}
+
+.car-image-thumbnail {
+    width: 150px;
+}
+
+@media screen and (min-width: 992px)
+{
+    .new-offer-illustration {
+        background-image: url("../images/undraw-new-offer-illustration.svg");
+        background-position: 85% 200px;
+        background-size: 400px;
+        background-repeat: no-repeat;
+    }
+
+    .edit-offer-illustration {
+        background-image: url("../images/undraw-edit-offer-illustration.svg");
+        background-position: 85% 200px;
+        background-size: 400px;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (max-width: 576px)
+{
+    .jumbotron-title {
+        font-size: 10vw;
+    }
+}
