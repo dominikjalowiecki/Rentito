@@ -22,6 +22,8 @@ Project of car rental company website. [Click here to preview.][preview]
 - [x] User login
 - [x] User registration
 - [x] User profile
+- [x] Moderator privileges
+- [x] Offers' administration panel
 - [x] Filtering offers
 - [x] Car reservation
 - [x] Adding new offers of cars
