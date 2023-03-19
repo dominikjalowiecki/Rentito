@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Baza danych: `rentito2`
+-- Baza danych: `rentito`
 --
 
 -- --------------------------------------------------------
@@ -31,6 +31,21 @@ CREATE TABLE `brand` (
   `id_brand` int(11) NOT NULL,
   `name` varchar(30) COLLATE utf8_polish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
+
+--	
+-- Zrzut danych tabeli `brand`	
+--	
+INSERT INTO `brand` (`id_brand`, `name`) VALUES	
+(1, 'Skoda'),	
+(2, 'Volkswagen'),
+(3, 'BMW'),	
+(4, 'Audi'),	
+(5, 'Mazda'),	
+(6, 'Ford'),	
+(7, 'Fiat'),	
+(8, 'Alfa Romeo'),	
+(9, 'Hyundai'),	
+(10, 'Subaru');	
 
 -- --------------------------------------------------------
 
@@ -60,6 +75,17 @@ CREATE TABLE `car_type` (
   `id_car_type` int(11) NOT NULL,
   `name` varchar(20) COLLATE utf8_polish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
+
+--	
+-- Zrzut danych tabeli `car_type`	
+--	
+INSERT INTO `car_type` (`id_car_type`, `name`) VALUES	
+(1, 'Sedan'),	
+(2, 'SUV'),
+(3, 'Kabriolet'),	
+(4, 'Hatchback'),	
+(5, 'Minivan'),	
+(6, 'Kombi');	
 
 -- --------------------------------------------------------
 
@@ -164,7 +190,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT dla tabeli `brand`
 --
 ALTER TABLE `brand`
-  MODIFY `id_brand` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_brand` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT dla tabeli `car`
@@ -176,7 +202,7 @@ ALTER TABLE `car`
 -- AUTO_INCREMENT dla tabeli `car_type`
 --
 ALTER TABLE `car_type`
-  MODIFY `id_car_type` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_car_type` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT dla tabeli `image`
